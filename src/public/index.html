@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Market Alert App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="App.js"></script>
-  </body>
-</html>
+<div style="text-align: center; margin-top: 50px; font-family: Arial;">
+    <h1>Market & Funding Alert</h1>
+    <button onclick="Notification.requestPermission()">Enable Notifications</button>
+    
+    <div style="margin: 20px; padding: 20px; border: 1px solid #ccc;">
+        <h3>BTC Price: <span id="btc-price">Loading...</span></h3>
+    </div>
+
+    <input type="number" id="target-input" placeholder="Set Target Price" />
+    <p>साहिल भाई, अब यह बिना React के सीधा चलेगा!</p>
+</div>
+
+<script src="App.js"></script>
